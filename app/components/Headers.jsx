@@ -12,9 +12,12 @@ const Headers = () => {
             <Image src="/token.svg" alt="pullix_logo" width={35} height={35} />
             <h1 className="font-bold text-2xl">Dogecoin20</h1>
           </Link>
-          <button className="px-4 py-2 rounded-lg border border-black text-black">
+          <Link
+            href="/wallet"
+            className="px-4 py-2 rounded-lg border border-black text-medium text-black"
+          >
             Connect Wallet
-          </button>
+          </Link>
         </div>
       </div>
     </div>

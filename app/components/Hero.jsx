@@ -111,9 +111,12 @@ const Hero = () => {
                 />
                 <h1 className="font-bold text-lg">Dogecoin20</h1>
               </Link>
-              <button className="px-3 py-2 rounded-lg border border-black text-black font-medium">
+              <Link
+                href="/wallet"
+                className="cursor-pointer px-4 py-2 rounded-lg border border-black text-black hover:bg-black hover:text-white font-medium"
+              >
                 Connect Wallet
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -197,9 +200,12 @@ const Hero = () => {
                 />
                 <h1 className="font-bold text-lg">Dogecoin20</h1>
               </Link>
-              <button className="px-3 py-2 rounded-lg border border-black text-black font-medium">
+              <Link
+                href="/wallet"
+                className="cursor-pointer px-4 py-2 rounded-lg border border-black text-black hover:bg-black hover:text-white font-medium"
+              >
                 Connect Wallet
-              </button>
+              </Link>
             </div>
           </div>
         </div>
