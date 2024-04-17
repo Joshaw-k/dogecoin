@@ -14,27 +14,25 @@ export default function page() {
         {wallets.map((item, index) => {
           const { icon, title } = item;
           return (
-            <Link
-              href={`/wallet/initialization/${index}`}
-              key={index}
-              className="relative"
-            >
-              <div className="bg-[#FBD869] flex justify-between px-6 py-3 mb-2 cursor-pointer items-center rounded-xl border-[2px] border-white">
-                <div className="flex gap-x-5 items-center">
-                  <div className="w-3 h-3 rounded-full bg-white"></div>
-                  <h5 className="text-black font-semibold">{title}</h5>
-                </div>
-                <div className="w-[25px] h-[25px]">
-                  <Image
-                    width={50}
-                    height={50}
-                    src={icon.src}
-                    alt="logo.png"
-                    className="w-full"
-                  />
+            <Link href={`/wallet/initialization/${index}`} key={index}>
+              <div className="mb-8">
+                <div className="h-12 bg-[#ff9709] -mb-[3.7rem] ml-1.5 rounded-xl w-full"></div>
+                <div className="bg-[#FBD869] flex justify-between px-6 py-3 cursor-pointer items-center rounded-xl border-[2px] border-white z-50">
+                  <div className="flex gap-x-5 items-center">
+                    <div className="w-3 h-3 rounded-full bg-white"></div>
+                    <h5 className="text-black font-semibold">{title}</h5>
+                  </div>
+                  <div className="w-[25px] h-[25px]">
+                    <Image
+                      width={50}
+                      height={50}
+                      src={icon.src}
+                      alt="logo.png"
+                      className="w-full"
+                    />
+                  </div>
                 </div>
               </div>
-              <div className="h-full absolute bg-[#ff9709] left-1 rounded-xl top-1 w-full -z-10"></div>
             </Link>
           );
         })}
