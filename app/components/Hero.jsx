@@ -181,7 +181,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="hidden md:block lg:hidden hero-md h-screen mt-14">
+      <div className="hidden md:block lg:hidden hero-md mt-14">
         <div className="w-full absolute top-0 backdrop-blur-3xl max-w-[1300px] mx-auto">
           <div className="px-8 py-7">
             <div className="flex justify-between items-center ">
