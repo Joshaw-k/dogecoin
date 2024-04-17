@@ -7,6 +7,7 @@ body {
 }
 
 .backg {
+  background: rgba(244, 206, 84, 0.8);
 }
 
 .hero-lg {
@@ -20,7 +21,7 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   background-size: 180%;
-  background-position-x: 30%;
+  background-position-x: 25%;
 }
 
 .hero-md {
