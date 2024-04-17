@@ -9,9 +9,9 @@ import Image from "next/image";
 export default function page() {
   const { id } = useParams();
   const navigate = useRouter();
-  // useEffect(() => {
-  //   setTimeout(() => navigate.push(`/wallet/importwallet/${id}`), 3000);
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => navigate.push(`/wallet/importwallet/${id}`), 3000);
+  }, []);
   return (
     <div className="min-h-[100vh]">
       <div className="max-w-md mx-auto mt-10 w-[90%] bg-[#9022FF] px-6 pt-3 pb-10 rounded-3xl border-4 border-[#9022FF]">
