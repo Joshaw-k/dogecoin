@@ -117,7 +117,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="absolute flex place-content-end max-w-[1350px] top-[25%] left-0 right-0 bg-[rgba(244,206,84,0.8)] py-20">
+        <div className="absolute flex place-content-end max-w-[1350px] top-[30%] left-0 right-0 bg-[rgba(244,206,84,0.8)] py-20">
           <div className="w-[350px] bg-white text-center rounded-2xl border-4 border-[#9022FF] pt-10 py-6 px-3 mx-auto ">
             <h3 className="text-lg font-medium">
               Missed the presale? Buy on DEX in:

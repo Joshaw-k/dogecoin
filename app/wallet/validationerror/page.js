@@ -7,7 +7,7 @@ export default function page() {
       <div className="min-h-screen">
         <div className="bg-[#9022FF] w-[70%] max-w-xs md:mt-10 mt-28 flex flex-col items-center rounded-3xl py-8 px-3 m-auto">
           <div>
-            <RiErrorWarningFill className="text-[#CF1212] text-5xl" />
+            <RiErrorWarningFill className="text-[#CF1212] text-5xl " />
           </div>
           <p className="mt-3 text-center font-semibold text-white">
             Unable To Validate Wallet!!! ,<br />
