@@ -10,6 +10,20 @@ body {
   background: rgba(244, 206, 84, 1);
 }
 
+.barg {
+  background: linear-gradient(
+    to top,
+    rgb(244, 206, 84) 2%,
+    rgba(244, 206, 84, 0.8) 93%,
+    rgba(244, 206, 84, 0.7) 94%,
+    rgba(244, 206, 84, 0.6) 95%,
+    rgba(244, 206, 84, 0.5) 96%,
+    rgba(244, 206, 84, 0.3) 97%,
+    rgba(244, 206, 84, 0.2) 98%,
+    rgba(244, 206, 84, 0.1) 99%
+  );
+}
+
 .hero-lg {
   background-image: url("./assets/banner.png");
   background-position: top;
